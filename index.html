@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh Grade Angles Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Angles Practice!</h1>
+            <p>Let's improve your angle skills!</p>
+        </header>
+        
+        <!-- Name and optional school info -->
+        <div class="user-info">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="school">Your School (Optional):</label>
+            <input type="text" id="school" placeholder="Enter your school (Optional)">
+        </div>
+        
+        <!-- Math Question Section -->
+        <div class="math-questions">
+            <p id="question"></p>
+            <input type="number" id="answer" placeholder="Your answer" required>
+            <button onclick="checkAnswer()">Submit Answer</button>
+        </div>
+        
+        <!-- Results Section -->
+        <div id="result" class="result-section">
+            <p>Score: <span id="score">0</span></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+        
+        <!-- Score Comparison Section -->
+        <div id="comparison-section" class="comparison-section">
+            <p>Previous Score: <span id="previous-score">N/A</span></p>
+            <button onclick="compareScores()">Compare Scores</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
